@@ -1,0 +1,28 @@
+{
+  "name": "adc101",
+  "version": "0.0.2",
+  "keywords": "adc,ADC101C,ADC101Cc021,ADC101Cc027,texas instruments",
+  "description": "This library allows communication with I²C connected ADC101C converters.",
+  "authors":
+  {
+    "name":  "Daniel Mack",
+    "url":   "https://github.com/zonque",
+    "maintainer": true
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/zonque/ADC101C-arduino"
+  },
+  "homepage": "https://github.com/zonque/ADC101C-arduino",
+  "export": {
+    "exclude": [
+      "linux",
+      "extras",
+      "tests"
+    ]
+  },
+  "frameworks": "Arduino",
+  "platforms": "*",
+  "examples": "examples/*.cpp"
+}

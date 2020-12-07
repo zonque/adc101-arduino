@@ -19,7 +19,7 @@ void setup(void)
 }
 
 void loop(void) {
-  Serial.printf("Last conversion: 0x%03x, highest 0x%03x, lowest %03x, over alert %s, under alert %s\n",
+  Serial.printf("Last conversion: 0x%03x, highest 0x%03x, lowest %03x, under alert %s, over alert %s\n",
     adc.read(), adc.highest(true), adc.lowest(true),
     adc.underAlert(true) ? "yes" : "no",
     adc.overAlert(true)  ? "yes" : "no");

@@ -1,6 +1,6 @@
 {
   "name": "adc101",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": "adc,ADC101C,ADC101Cc021,ADC101Cc027,texas instruments",
   "description": "This library allows communication with I²C connected ADC101C converters.",
   "authors":

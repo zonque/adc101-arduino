@@ -89,7 +89,6 @@ uint16_t ADC101C::readRegister(uint8_t reg, uint8_t bytes)
   }
 
   uint16_t val = 0;
-  wire->beginTransmission(i2cAddr);
   wire->requestFrom(i2cAddr, bytes);
 
   while (bytes--)
@@ -97,8 +96,6 @@ uint16_t ADC101C::readRegister(uint8_t reg, uint8_t bytes)
     val <<= 8;
     val |= wire->read() & 0xff;
   }
-
-  wire->endTransmission();
 
   return val;
 }
